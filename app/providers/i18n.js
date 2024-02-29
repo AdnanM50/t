@@ -16,6 +16,7 @@ const I18nProvider = ({children}) => {
         if(!!lang) {
             fetchTranslations({_id: lang}).then(({error, data}) => {
                 if(!error) {
+                    
                     // let translate = {}
                     // data?.translations?.forEach(d => {
                     //     if(!!d.value) {
